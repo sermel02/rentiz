@@ -55,6 +55,23 @@ body {
   color: var(--text-color);
 }
 
+.link {
+  display: inline-block;
+  background-color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  padding: 22px 42px;
+  transition: all .2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #168b7d;
+  }
+}
+
 /* --------------------------------- /General -------------------------------- */
 
 /* --------------------------------- Header --------------------------------- */
@@ -440,27 +457,10 @@ body {
   }
 
   &__link {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     margin-top: 70px;
-
-    a {
-      display: inline-block;
-      padding: 22px 42px;
-      color: #fff;
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 28px;
-      text-transform: capitalize;
-      margin: 0 auto;
-      background-color: var(--accent-color);
-      cursor: pointer;
-      transition: all .2s ease;
-
-      &:hover {
-        background-color: #168b7d;
-      }
-    }
+    // margin: 0 auto;
   }
 }
 
@@ -745,6 +745,8 @@ body {
 
 /* --------------------------------- /Reviews -------------------------------- */
 
+
+
 /* --------------------------------- Gallery -------------------------------- */
 .gallery {
   padding: 160px 0;
@@ -794,20 +796,154 @@ body {
   }
 
   // .gallery__link
-  &__link {
-    display: inline-block;
-    background-color: var(--accent-color);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 24px;
+  &__link {}
+}
+
+/* --------------------------------- /Gallery -------------------------------- */
+
+
+
+/* ---------------------------------- Begin --------------------------------- */
+.begin {
+  position: relative;
+  padding: 180px 0;
+
+  .begin-deco1 {
+    position: absolute;
+    bottom: -250px;
+    left: 0;
+    z-index: -1;
+  }
+
+  .begin-deco2 {
+    position: absolute;
+    top: -77px;
+    right: 0;
+  }
+
+  // .begin__container
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1240px;
+  }
+
+  // .begin__title
+  &__title {
+    max-width: 512px;
+    font-weight: 600;
+    font-size: 68px;
     text-transform: capitalize;
     color: #FFFFFF;
-    padding: 22px 42px;
-    transition: all .2s;
+  }
+
+  // .begin__info
+  &__info {
+    flex: 0 0 50%;
+  }
+
+  // .begin__text
+  &__text {
+    margin-bottom: 50px;
+  }
+
+  // .begin__link
+  &__link {}
+}
+
+/* ---------------------------------- /Begin --------------------------------- */
+
+/* --------------------------------- Footer --------------------------------- */
+.footer {
+  background: #1A242F;
+  padding-top: 140px;
+  padding-bottom: 96px;
+
+  //.footer__container
+  &__conatiner {}
+
+  // .footer__main
+  &__main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 140px;
+  }
+
+  // .footer__block
+  &__block {}
+
+  // .footer__link
+  &__link {
+  }
+
+  // .footer__text
+  &__text {
+    margin-top: 20px;
+    width: 340px;
+    margin-bottom: 30px;
+  }
+
+  // .footer__socials
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  // .footer__social
+  &__social {
+    cursor: pointer;
+
+    svg {
+      fill: #555E68;
+      transition: all .2s;
+    }
+
     &:hover {
-      background-color: #168b7d;
+      svg {
+        fill: #fff;
+
+      }
     }
   }
 }
 
-/* --------------------------------- /Gallery -------------------------------- */
+.footer-links {
+
+  // .footer-links__header
+  &__header {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.26;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 11px;
+  }
+
+  // .footer-links__list
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  // .footer-links__item
+  &__item {
+    // margin-bottom: 10px;
+  }
+
+  // .footer-links__link
+  &__link {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all .2s;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+/* --------------------------------- /Footer --------------------------------- */

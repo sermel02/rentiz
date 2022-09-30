@@ -52,6 +52,22 @@ body {
   color: var(--text-color);
 }
 
+.link {
+  display: inline-block;
+  background-color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  padding: 22px 42px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.link:hover {
+  background-color: #168b7d;
+}
+
 /* --------------------------------- /General -------------------------------- */
 /* --------------------------------- Header --------------------------------- */
 .header {
@@ -306,25 +322,7 @@ body {
   position: relative;
 }
 .popular__link {
-  display: flex;
-  justify-content: center;
   margin-top: 70px;
-}
-.popular__link a {
-  display: inline-block;
-  padding: 22px 42px;
-  color: #fff;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: capitalize;
-  margin: 0 auto;
-  background-color: var(--accent-color);
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-.popular__link a:hover {
-  background-color: #168b7d;
 }
 
 .popular-slide {
@@ -560,19 +558,96 @@ body {
 .gallery__text {
   margin-bottom: 45px;
 }
-.gallery__link {
-  display: inline-block;
-  background-color: var(--accent-color);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 24px;
+/* --------------------------------- /Gallery -------------------------------- */
+/* ---------------------------------- Begin --------------------------------- */
+.begin {
+  position: relative;
+  padding: 180px 0;
+}
+.begin .begin-deco1 {
+  position: absolute;
+  bottom: -250px;
+  left: 0;
+  z-index: -1;
+}
+.begin .begin-deco2 {
+  position: absolute;
+  top: -77px;
+  right: 0;
+}
+.begin__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1240px;
+}
+.begin__title {
+  max-width: 512px;
+  font-weight: 600;
+  font-size: 68px;
   text-transform: capitalize;
   color: #FFFFFF;
-  padding: 22px 42px;
+}
+.begin__info {
+  flex: 0 0 50%;
+}
+.begin__text {
+  margin-bottom: 50px;
+}
+/* ---------------------------------- /Begin --------------------------------- */
+/* --------------------------------- Footer --------------------------------- */
+.footer {
+  background: #1A242F;
+  padding-top: 140px;
+  padding-bottom: 96px;
+}
+.footer__main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 140px;
+}
+.footer__text {
+  margin-top: 20px;
+  width: 340px;
+  margin-bottom: 30px;
+}
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.footer__social {
+  cursor: pointer;
+}
+.footer__social svg {
+  fill: #555E68;
   transition: all 0.2s;
 }
-.gallery__link:hover {
-  background-color: #168b7d;
+.footer__social:hover svg {
+  fill: #fff;
 }
 
-/* --------------------------------- /Gallery -------------------------------- */
+.footer-links__header {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.26;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-bottom: 11px;
+}
+.footer-links__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-links__link {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 0.2s;
+}
+.footer-links__link:hover {
+  color: #fff;
+}
+
+/* --------------------------------- /Footer --------------------------------- *//*# sourceMappingURL=style.css.map */
