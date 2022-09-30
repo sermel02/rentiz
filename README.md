@@ -6,4 +6,5 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 This is some code: `git status`
 
 Visit my [GitHub Page](https://github.com/sermel02/).
+
 [Design](https://www.figma.com/file/NXEibpYo7WOBDdI8igPNkP/Rentiz?node-id=9%3A3)
